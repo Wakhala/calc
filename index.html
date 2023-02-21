@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <p>WhiteBike <br> LiX-100</p>
+            <hr>
+            <form>
+
+                <div class="screen">
+                    <div class="deal">
+                        <input type="text"  name="display"></div>
+                    <div class="ans">
+                        <input type="text" name="ans">
+                    </div>
+                </div>
+                
+                <hr>
+
+                <div>
+                    <input type="button" value="AC" onclick="display.value='',ans.value = ''"
+                      class="fx">
+                    <input type="button" value="ON | OFF" onclick="display.value= ''" ondblclick="display.value='off'"  class="fx1">
+                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0, -1)"  class="fx">
+                   
+                </div>
+
+                <div class="trigonometry">
+                    <input type="button" value="sin" onclick="display.value += 'sin()'" class="lx">
+                    <input type="button" value="tan" onclick="display.value += 'tan()'" class="lx">
+                    <input type="button" value="cos" onclick="display.value += 'cos()'" class="lx">
+                    <input type="button" value="log" onclick="display.value += 'log()'" class="lx">
+                </div>
+
+                <div>
+                    <input type="button" value="&#8730;" onclick="display.value += '**(1/2)'" class="lx">
+                    <input type="button" value="&#8896;" onclick="display.value += '**'" class="lx">
+                    <input type="button" value="x&#xb3;" onclick="display.value += '**3'" class="lx">
+                    <input type="button" value="x&#xb2;" onclick="display.value += '**2'" class="lx">
+                </div>
+
+                <div>
+                    <input type="button" value="(" onclick="display.value += '('" class="lx">
+                    <input type="button" value=")" onclick="display.value += ')'" class="lx">
+
+                    <input type="button" value="&#960;" onclick="display.value += '3.141592654'" class="lx">
+
+                    <input type="button" value="." onclick="display.value += '.'" class="lx">
+                   
+                </div>
+
+                <div>
+                    <input type="button" value="7" onclick="display.value += '7'">
+                    <input type="button" value="8" onclick="display.value += '8'">
+                    <input type="button" value="9" onclick="display.value += '9'">
+                    <input type="button" value="&#215;" onclick="display.value += '*'" class="lx">
+                </div>
+
+                <div>
+                    <input type="button" value="4" onclick="display.value += '4'">
+                    <input type="button" value="5" onclick="display.value += '5'">
+                    <input type="button" value="6" onclick="display.value += '6'">
+                    <input type="button" value="-" onclick="display.value += '-'" class="lx">
+                </div>
+
+                <div>
+                    <input type="button" value="1" onclick="display.value += '1'">
+                    <input type="button" value="2" onclick="display.value += '2'">
+                    <input type="button" value="3" onclick="display.value += '3'">
+                    <input type="button" value="+" onclick="display.value += '+'" class="lx">
+                </div>
+
+                <div>
+                
+                    <input type="button" value="0" onclick="display.value += '0'" class="lx1">
+                    
+
+                    <input type="button" value="&#247;" onclick="display.value += '/'" class="lx1">
+
+                    <input type="button" value="ANS" onclick="display.value = eval (ans.value)" class="lx1">
+
+                    <input type="button"     onclick="ans.value = eval(display.value)" value="=" class="fx">
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+</body>
+</html>

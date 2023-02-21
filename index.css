@@ -1,0 +1,112 @@
+body {
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: left;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.calculator {
+    background: rgb(173, 173, 173);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width:  50px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgb(0, 0, 0), 8px 8px 8px rgb(0, 0, 0);
+    background: transparent;
+    font-size: 20px;
+    color: rgb(27, 16, 0);
+    cursor: pointer;
+    margin: 10px;
+}
+
+.calculator form input:active {
+    background: rgb(62, 62, 62);
+
+}
+
+form .screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0px 0;
+    background:rgb(255, 205, 205);
+    border-radius: 10px;
+
+}
+.screen .deal {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0;
+    background: rgb(255, 205, 205);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.screen .deal input {
+    color: rgb(0, 0, 177);
+}
+
+form .screen input {
+    text-align: left;
+    flex: 1;
+    font-size: 20px;
+    box-shadow:  none;
+
+}
+
+.calculator p {
+    margin-left: 75%;
+}
+form .ans {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0;
+    background: rgb(255, 205, 205);
+    width: 100%;
+    border-radius: 0px;
+}
+form .ans input  {
+    text-align: right;
+    flex: 1;
+    font-size: 20px;
+    box-shadow:  none;
+}
+p {
+    font-size: small;
+}
+.calculator .fx {
+    background: rgb(194, 3, 3);
+    color: white;
+}
+.calculator .fx1 {
+    width: 126px;
+    height: 50px;
+    background: rgb(194, 3, 3);
+    color: white;
+}
+.calculator .lx {
+    background: rgb(1, 1, 111);
+    color: beige;
+}
+
+.calculator .lx1 {
+    background: rgb(0, 0, 0);
+    color: beige;
+}
+
